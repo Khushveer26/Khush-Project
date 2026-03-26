@@ -6,14 +6,12 @@ const mysql = require('mysql2');
 
 // Create a connection pool for better performance
 const pool = mysql.createPool({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'Khushveer#26',    // MySQL root password
-    database : 'portfolio_db',
-    waitForConnections: true,
-    connectionLimit   : 10,
-    queueLimit        : 0
+    host     : process.env.DB_HOST || 'localhost',
+    user     : process.env.DB_USER || 'root',
+    password : process.env.DB_PASSWORD || 'Khushveer#26',
+    database : process.env.DB_NAME || 'portfolio_db',
 });
+
 
 // Verify connection on startup
 pool.getConnection((err, connection) => {
