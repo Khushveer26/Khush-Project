@@ -211,7 +211,10 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await fetch(API_URL, {
             method : 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+                'Content-Type': 'application/json',
+                'Bypass-Tunnel-Reminder': 'true'
+            },
             body   : JSON.stringify(payload)
         });
 
