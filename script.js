@@ -10,7 +10,7 @@
 'use strict';
 
 /* ── Constants ── */
-const API_URL = 'https://bitter-wombats-decide.loca.lt/contact';
+const API_URL = 'https://khush-portfolio-api-777.loca.lt/contact';
 
 // =============================================
 //  PARTICLE BACKGROUND
