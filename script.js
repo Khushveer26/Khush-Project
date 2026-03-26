@@ -10,7 +10,7 @@
 'use strict';
 
 /* ── Constants ── */
-const API_URL = 'http://localhost:5000/contact';
+const API_URL = 'https://khush-portfolio-backend.onrender.com/contact';
 
 // =============================================
 //  PARTICLE BACKGROUND
